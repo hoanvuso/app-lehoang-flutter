@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "135429514179",
+    "project_id": "app-lehoang",
+    "storage_bucket": "app-lehoang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135429514179:android:b85b681c41dc9d2bf41376",
+        "android_client_info": {
+          "package_name": "com.lehoang.lehoangcctv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135429514179-o3080fnvrk2b35t34kovctto14umjfcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfzuFkoEKh1_rEkECfXuNO4tZ0MMxUtkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135429514179-o3080fnvrk2b35t34kovctto14umjfcl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "135429514179-avi0sut4bfiqc38e94vcrh9lji41llmk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lehoang.flutterLehoangExtracare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

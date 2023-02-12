@@ -1,0 +1,116 @@
+name: flutter_lehoang_extracare
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.9+15
+
+environment:
+  sdk: ">=2.14.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # For structure
+  freezed: ^0.14.1+1
+  freezed_annotation: ^0.14.1
+  json_serializable: ^4.0.0
+  enum_to_string: ^2.0.1
+  equatable: ^2.0.0
+  image_picker: ^0.6.7
+  intl: ^0.17.0
+
+
+  # Network
+  dio: ^3.0.10
+#  ua_client_hints: ^1.0.3      # For User-Agent Client Hints
+  # Hook Provider
+  hooks_riverpod: ^0.13.1+1
+  flutter_hooks: ^0.16.0
+  # SharePref, database
+  sqflite: ^2.0.0+3
+  shared_preferences: ^2.0.5
+  path_provider: ^2.0.1
+  permission_handler: ^8.0.0+2  # Handle permission
+  url_launcher: ^6.0.7 # Handle open phone/link url ...
+  share: ^2.0.4        # Share intent
+
+  firebase_messaging: ^10.0.0     #fcm
+  flutter_local_notifications: ^4.0.1    #push notification
+  firebase_core: ^1.2.0
+
+  # For UIs
+  get: ^4.0.0-nullsafety.2        # For Utilities
+  carousel_slider: ^3.0.0           #Banner
+  flutter_screenutil: ^5.0.0+2      # Multi screen size
+  flutter_native_splash: ^1.2.0   # Splash screen
+  auto_animated: ^3.0.0           # List view, Grid view with animation
+  cached_network_image: ^2.5.1
+  smart_select: ^4.3.2            # Show list pick item dialog
+  flutter_rating_bar: ^4.0.0      # Rate view
+  rflutter_alert: ^1.1.0          # Show alert dialog
+  adaptive_dialog: ^0.10.0+5
+  webview_flutter: ^2.1.2
+  flutter_datetime_picker: ^1.5.0 # Date time picker
+  bubble_tab_indicator: ^0.1.6      #tab bar
+  shimmer: ^1.1.2
+  flutter_spinkit: ^5.0.0         # Loading circle,wave,...
+  fancy_shimmer_image: ^1.2.0     # Loading shimmer placeholder Image
+  transparent_image: ^2.0.0       # Transparent placeholder
+  file_picker: ^3.0.1    # Pick multi image
+  fluttertoast: ^8.0.7   # Show toast
+
+
+  flutter_countdown_timer: ^4.1.0 # count down for otp page
+  syncfusion_flutter_pdfviewer: ^18.4.49-beta # read pdf
+  pin_code_fields: ^7.2.0 # Otp View
+#  qr_code_scanner: ^0.5.1 #Scan QR code
+  ai_barcode: ^3.0.1
+  qr_flutter: ^4.0.0 #Generate QR Code
+  page_turn: ^1.0.1 # Hiệu ứng lật trang
+  flutter_cache_manager: ^2.1.0 # preload cache image
+  pin_dot: ^1.0.1 #change pin password
+  flutter_inappwebview: ^5.3.2
+  photo_view: ^0.13.0 # image view zoom
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^1.12.2
+  flutter_gen_runner: ^3.0.2
+  flutter_launcher_icons: ^0.9.0
+
+dependency_overrides:
+  flutter_plugin_android_lifecycle: ^2.0.0
+  plugin_platform_interface: ^2.0.0
+  args: ^2.1.1
+  path_provider: ^2.0.1
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/translations/
+  fonts:
+    - family: Helvetican
+      fonts:
+        - asset: assets/fonts/helveticaneue.ttf
+          weight: 400
+        - asset: assets/fonts/helveticaneueitalic.ttf
+          style: italic
+        - asset: assets/fonts/helveticaneuebold.ttf
+          weight: 700
+
+# gen splash screen
+flutter_native_splash:
+  background_image: "assets/images/background_splash.png"
+
+# gen app icon
+# flutter pub run flutter_launcher_icons:main
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_logo.png"
